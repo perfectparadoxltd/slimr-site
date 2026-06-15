@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Slimr</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Mon, 15 Jun 2026 21:54:22 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://slimr.perfectparadox.co.uk/Slimr-0.1.0.zip" length="2001951" type="application/octet-stream" sparkle:edSignature="yyQPdW8TXct37yNH+swSF5pWNDHqoe7eItZi1BtCeTyY6Qgth5x4LIYkKj74c5MhCQMxtRm8In6j3FSY4/n3Dw=="/>
+        </item>
+    </channel>
+</rss>

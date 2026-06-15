@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://slimr.perfectparadox.co.uk/sitemap.xml
