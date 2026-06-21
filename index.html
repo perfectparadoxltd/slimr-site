@@ -3,9 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Slimr — Every PDF and image, smaller, on your Mac</title>
-<meta name="description" content="Compress images and PDFs to a target size, merge/split/extract pages, and OCR scans into searchable PDFs — 100% on-device. One-time $19.99, zero telemetry. macOS 14+.">
+<title data-i18n="meta.title">Slimr — Every PDF and image, smaller, on your Mac</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Compress images and PDFs to a target size, merge/split/extract pages, and OCR scans into searchable PDFs — 100% on-device. One-time $19.99, zero telemetry. macOS 14+.">
 <link rel="canonical" href="https://slimr.perfectparadox.co.uk/">
+<link rel="alternate" hreflang="en" href="https://slimr.perfectparadox.co.uk/?lang=en">
+<link rel="alternate" hreflang="es" href="https://slimr.perfectparadox.co.uk/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://slimr.perfectparadox.co.uk/?lang=fr">
+<link rel="alternate" hreflang="de" href="https://slimr.perfectparadox.co.uk/?lang=de">
+<link rel="alternate" hreflang="it" href="https://slimr.perfectparadox.co.uk/?lang=it">
+<link rel="alternate" hreflang="pt" href="https://slimr.perfectparadox.co.uk/?lang=pt">
+<link rel="alternate" hreflang="ja" href="https://slimr.perfectparadox.co.uk/?lang=ja">
+<link rel="alternate" hreflang="zh-Hans" href="https://slimr.perfectparadox.co.uk/?lang=zh-Hans">
+<link rel="alternate" hreflang="x-default" href="https://slimr.perfectparadox.co.uk/">
 <meta property="og:title" content="Slimr — Every PDF and image, smaller, on your Mac">
 <meta property="og:description" content="A complete PDF and image suite: compress to a target size, merge/split/extract, and OCR — all on-device. One-time $19.99, zero telemetry.">
 <meta property="og:type" content="website">
@@ -127,6 +136,12 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 .d-scan{position:relative;width:60px;height:44px;border:1px solid var(--line);border-radius:4px;background:#111;overflow:hidden}
 .d-scan::after{content:'';position:absolute;left:0;right:0;height:3px;background:var(--indigo2);box-shadow:0 0 8px var(--indigo2);animation:scanline 2.6s linear infinite}
 @keyframes scanline{0%{top:-3px}100%{top:44px}}
+/* language picker (i18n) */
+.i18n-picker{display:flex;align-items:center;gap:7px}
+.i18n-picker .i18n-globe{font-size:13px;opacity:.7;line-height:1}
+.i18n-picker select{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:6px;padding:7px 28px 7px 10px;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238c8a86' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;transition:.18s}
+.i18n-picker select:hover{color:var(--ink);border-color:var(--indigo2)}
+.i18n-picker select option{background:#0d0d0e;color:var(--ink);text-transform:none}
 </style>
 <script defer data-domain="slimr.perfectparadox.co.uk" src="https://analytics.dchv.co.uk/js/script.js"></script>
 </head>
@@ -141,21 +156,21 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 
 <nav>
   <div class="brand">PERFECT&nbsp;PARADOX</div>
-  <div class="links"><a href="#features">Features</a><a href="#buy">Buy</a><a href="/legal/privacy.html">Privacy</a></div>
+  <div class="links"><a href="#features" data-i18n="nav.features">Features</a><a href="#buy" data-i18n="nav.buy">Buy</a><a href="/legal/privacy.html" data-i18n="nav.privacy">Privacy</a></div>
 </nav>
 
-<div id="stickybuy"><div class="sb-l"><b>Slimr</b> <span>&mdash; compress, OCR &amp; PDF tools, on-device</span></div><button class="btn primary" onclick="openCheckout()" style="padding:12px 26px">Buy &middot; $19.99</button></div>
+<div id="stickybuy"><div class="sb-l"><b>Slimr</b> <span data-i18n="sticky.tagline">&mdash; compress, OCR &amp; PDF tools, on-device</span></div><button class="btn primary" onclick="openCheckout()" style="padding:12px 26px" data-i18n="sticky.buy">Buy &middot; $19.99</button></div>
 <div class="page">
 <section class="hero">
   <div class="veil"></div>
   <div class="inner">
-    <div class="kicker">PDF &amp; Image Suite · On-device · No subscription</div>
+    <div class="kicker" data-i18n="hero.kicker">PDF &amp; Image Suite · On-device · No subscription</div>
     <h1>SLI<span class="stroke">MR</span></h1>
-    <p class="sub">Every PDF and image, smaller — on your Mac. Compress to a target size, merge, split, extract and OCR. Nothing leaves your machine.</p>
+    <p class="sub" data-i18n="hero.sub">Every PDF and image, smaller — on your Mac. Compress to a target size, merge, split, extract and OCR. Nothing leaves your machine.</p>
     <div class="cta-row">
-      <a href="https://slimr.perfectparadox.co.uk/Slimr-0.1.0.zip" class="btn primary">Download trial →</a>
-      <button class="btn" onclick="openCheckout()">Buy · $19.99</button>
-      <span class="price-tag">ONE-TIME · 14-DAY TRIAL</span>
+      <a href="https://slimr.perfectparadox.co.uk/Slimr-0.1.0.zip" class="btn primary" data-i18n="hero.download">Download trial →</a>
+      <button class="btn" onclick="openCheckout()" data-i18n="hero.buy">Buy · $19.99</button>
+      <span class="price-tag" data-i18n="hero.terms">ONE-TIME · 14-DAY TRIAL</span>
     </div>
   </div>
 </section>
@@ -163,83 +178,208 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 <div class="marquee"><div>COMPRESS TO A TARGET SIZE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;ON-DEVICE OCR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;MERGE · SPLIT · EXTRACT&nbsp;&nbsp;·&nbsp;&nbsp;<b>NEVER TOUCHES YOUR ORIGINALS</b>&nbsp;&nbsp;·&nbsp;&nbsp;COMPRESS TO A TARGET SIZE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;ON-DEVICE OCR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;MERGE · SPLIT · EXTRACT&nbsp;&nbsp;·&nbsp;&nbsp;<b>NEVER TOUCHES YOUR ORIGINALS</b>&nbsp;&nbsp;·&nbsp;&nbsp;</div></div>
 
 
-<section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label">// How it works</div></div><div class="how-wrap">
-<div class="step"><div class="sn">1</div><h4>Drop a file<br>or a folder</h4><p>Drag in a PNG, JPEG, HEIC, TIFF or PDF — or a whole folder. Slimr handles single files and recurses through entire folders in one go.</p></div>
-<div class="step"><div class="sn">2</div><h4>Pick a job<br>and a target</h4><p>Compress to Email 10 MB, Web 1 MB or Small 2 MB. Or merge, split and extract pages, or OCR a scan into a searchable PDF.</p></div>
-<div class="step"><div class="sn">3</div><h4>Get the result,<br>originals intact</h4><p>Folders are written to a mirror named "&lt;name&gt; — Slimr" beside the original. Your source files are never modified, ever.</p></div>
+<section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label" data-i18n="how.label">// How it works</div></div><div class="how-wrap">
+<div class="step"><div class="sn">1</div><h4 data-i18n="how.1.title">Drop a file<br>or a folder</h4><p data-i18n="how.1.body">Drag in a PNG, JPEG, HEIC, TIFF or PDF — or a whole folder. Slimr handles single files and recurses through entire folders in one go.</p></div>
+<div class="step"><div class="sn">2</div><h4 data-i18n="how.2.title">Pick a job<br>and a target</h4><p data-i18n="how.2.body">Compress to Email 10 MB, Web 1 MB or Small 2 MB. Or merge, split and extract pages, or OCR a scan into a searchable PDF.</p></div>
+<div class="step"><div class="sn">3</div><h4 data-i18n="how.3.title">Get the result,<br>originals intact</h4><p data-i18n="how.3.body">Folders are written to a mirror named "&lt;name&gt; — Slimr" beside the original. Your source files are never modified, ever.</p></div>
 </div></section>
 <section class="appshow" style="padding:120px 56px;background:rgba(10,10,11,.82)">
   <div style="max-width:760px;margin:0 auto">
-    <div class="sec-label">// See it work</div>
+    <div class="sec-label" data-i18n="see.label">// See it work</div>
     <div style="background:#1c1c1e;border:0.5px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);font-family:-apple-system,system-ui,sans-serif;max-width:420px;margin:0 auto">
       <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;background:#2a2a2c;border-bottom:0.5px solid rgba(255,255,255,.08)">
         <span style="font-size:13px;color:#e9e9ea;font-weight:600;display:flex;align-items:center;gap:7px"><span style="width:14px;height:16px;display:inline-block;background:#4F46E5;border-radius:2px 2px 4px 4px"></span>Slimr</span>
-        <span style="font-size:11px;color:#8c8a86">Compress</span>
+        <span style="font-size:11px;color:#8c8a86" data-i18n="see.window">Compress</span>
       </div>
       <div style="padding:18px 18px 14px;border-bottom:0.5px solid rgba(255,255,255,.07)">
-        <div style="border:1px dashed rgba(129,140,248,.5);border-radius:10px;padding:18px;text-align:center;color:#cbc7bf;font-size:13px">Drop images, PDFs or a folder here</div>
+        <div style="border:1px dashed rgba(129,140,248,.5);border-radius:10px;padding:18px;text-align:center;color:#cbc7bf;font-size:13px" data-i18n="see.drop">Drop images, PDFs or a folder here</div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
-        <span style="font-size:14px;color:#f4f1ea">Target preset</span>
-        <span style="font-size:13px;color:#818cf8;font-weight:600">Email · 10 MB ▾</span>
+        <span style="font-size:14px;color:#f4f1ea" data-i18n="see.target">Target preset</span>
+        <span style="font-size:13px;color:#818cf8;font-weight:600" data-i18n="see.preset">Email · 10 MB ▾</span>
       </div>
       <div style="padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
         <div style="display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#cbc7bf;margin-bottom:8px"><span>report.pdf</span><span style="color:#818cf8">42.6 MB → 9.4 MB</span></div>
         <div style="height:6px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden"><span style="display:block;height:100%;width:22%;background:#4F46E5;border-radius:3px"></span></div>
       </div>
       <div style="padding:14px 18px;border-bottom:0.5px solid rgba(255,255,255,.06)">
-        <div style="background:#4F46E5;color:#fff;border-radius:8px;padding:11px;font-size:13px;font-weight:600;text-align:center">Compress 24 files</div>
+        <div style="background:#4F46E5;color:#fff;border-radius:8px;padding:11px;font-size:13px;font-weight:600;text-align:center" data-i18n="see.btn">Compress 24 files</div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:#161617;font-size:12px;color:#8c8a86">
-        <span>Last run</span><span style="color:#cbc7bf">Invoices — Slimr · 24 files · −78%</span>
+        <span data-i18n="see.lastrun">Last run</span><span style="color:#cbc7bf" data-i18n="see.lastrun.val">Invoices — Slimr · 24 files · −78%</span>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 18px;background:#161617;border-top:0.5px solid rgba(255,255,255,.07);font-size:11px;color:#6e6c69">
-        <span>On-device · No telemetry</span><span>Originals untouched</span>
+        <span data-i18n="see.foot.l">On-device · No telemetry</span><span data-i18n="see.foot.r">Originals untouched</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="feat" id="features"><div class="feat-inner"><div class="sec-label">// What it does</div><div class="grid">
-<div class="cell"><div class="demo"><div class="d-row"><span class="d-tag" style="margin:0">42 MB</span><span class="d-bar"><i></i></span><span class="d-chk">&#10003;</span></div></div><div class="n">01</div><div><h3>Compress to<br>a target size</h3><p>Squeeze PNG, JPEG, HEIC, TIFF and PDFs down to a size you choose &mdash; presets for Email (10 MB), Web (1 MB) and Small (2 MB), or your own number. Drop a whole folder and Slimr compresses everything inside recursively into a mirror folder named &ldquo;&lt;name&gt; &mdash; Slimr&rdquo;, never touching your originals.</p></div></div>
-<div class="cell"><div class="demo"><span class="d-pages"><span class="d-pg"></span><span class="d-pg"></span><span class="d-pg"></span></span><span class="d-tag">Merge · Split · Extract</span></div><div class="n">02</div><div><h3>PDF tools<br>that just work</h3><p>Merge several PDFs into one, split a document every N pages, or extract any page range into a new file. Fast, precise and entirely local &mdash; no upload, no watermark, no page limit.</p></div></div>
-<div class="cell"><div class="demo"><span class="d-scan"></span><span class="d-tag">Searchable PDF</span></div><div class="n">03</div><div><h3>OCR scans<br>into searchable PDFs</h3><p>Turn scans and image-only PDFs into fully searchable documents with an invisible text layer, powered by Apple's on-device Vision engine. Select, copy and search the text &mdash; the page still looks exactly the same.</p></div></div>
-<div class="cell"><div class="demo"><span class="d-glyph">&#128340;</span><span class="d-tag">Before → After · local log</span></div><div class="n">04</div><div><h3>History,<br>on your Mac</h3><p>Every operation is logged locally: before and after sizes, date, and one click to open the result. No account, no telemetry, no diagnostics &mdash; the whole record lives on your machine. One-time purchase.</p></div></div>
+<section class="feat" id="features"><div class="feat-inner"><div class="sec-label" data-i18n="feat.label">// What it does</div><div class="grid">
+<div class="cell"><div class="demo"><div class="d-row"><span class="d-tag" style="margin:0">42 MB</span><span class="d-bar"><i></i></span><span class="d-chk">&#10003;</span></div></div><div class="n">01</div><div><h3 data-i18n="feat.1.title">Compress to<br>a target size</h3><p data-i18n="feat.1.body">Squeeze PNG, JPEG, HEIC, TIFF and PDFs down to a size you choose &mdash; presets for Email (10 MB), Web (1 MB) and Small (2 MB), or your own number. Drop a whole folder and Slimr compresses everything inside recursively into a mirror folder named &ldquo;&lt;name&gt; &mdash; Slimr&rdquo;, never touching your originals.</p></div></div>
+<div class="cell"><div class="demo"><span class="d-pages"><span class="d-pg"></span><span class="d-pg"></span><span class="d-pg"></span></span><span class="d-tag">Merge · Split · Extract</span></div><div class="n">02</div><div><h3 data-i18n="feat.2.title">PDF tools<br>that just work</h3><p data-i18n="feat.2.body">Merge several PDFs into one, split a document every N pages, or extract any page range into a new file. Fast, precise and entirely local &mdash; no upload, no watermark, no page limit.</p></div></div>
+<div class="cell"><div class="demo"><span class="d-scan"></span><span class="d-tag">Searchable PDF</span></div><div class="n">03</div><div><h3 data-i18n="feat.3.title">OCR scans<br>into searchable PDFs</h3><p data-i18n="feat.3.body">Turn scans and image-only PDFs into fully searchable documents with an invisible text layer, powered by Apple's on-device Vision engine. Select, copy and search the text &mdash; the page still looks exactly the same.</p></div></div>
+<div class="cell"><div class="demo"><span class="d-glyph">&#128340;</span><span class="d-tag">Before → After · local log</span></div><div class="n">04</div><div><h3 data-i18n="feat.4.title">History,<br>on your Mac</h3><p data-i18n="feat.4.body">Every operation is logged locally: before and after sizes, date, and one click to open the result. No account, no telemetry, no diagnostics &mdash; the whole record lives on your machine. One-time purchase.</p></div></div>
 </div></div></section>
 
-<section class="cmp"><div class="cmp-wrap"><div class="sec-label">// How it compares</div>
+<section class="cmp"><div class="cmp-wrap"><div class="sec-label" data-i18n="cmp.label">// How it compares</div>
 <table><thead><tr><th></th><th class="us">Slimr</th><th>PDF Squeezer</th><th>Smallpdf / iLovePDF</th><th>Adobe Acrobat</th><th>Preview</th></tr></thead><tbody>
-<tr><td>Compress to a target size</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">&#10007;</span></td></tr>
-<tr><td>OCR into searchable PDFs</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">&#10007;</span></td></tr>
-<tr><td>Merge · split · extract pages</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">~ limited</span></td></tr>
-<tr><td>Batch a whole folder recursively</td><td class="us yes">&#10003;</td><td><span class="no">~ files only</span></td><td><span class="no">~ web limits</span></td><td><span class="no">~ clunky</span></td><td><span class="no">&#10007;</span></td></tr>
-<tr><td>Runs on-device &mdash; files never leave your Mac</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">&#10007; cloud</span></td><td><span class="no">~ cloud features</span></td><td class="yes">&#10003;</td></tr>
-<tr><td>One-time purchase (no subscription)</td><td class="us yes">$19.99</td><td class="yes">$7.99</td><td><span class="no">subscription</span></td><td><span class="no">subscription</span></td><td class="yes">free</td></tr>
+<tr><td data-i18n="cmp.row.compress">Compress to a target size</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">&#10007;</span></td></tr>
+<tr><td data-i18n="cmp.row.ocr">OCR into searchable PDFs</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">&#10007;</span></td></tr>
+<tr><td data-i18n="cmp.row.pages">Merge · split · extract pages</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no" data-i18n="cmp.cell.limited">~ limited</span></td></tr>
+<tr><td data-i18n="cmp.row.batch">Batch a whole folder recursively</td><td class="us yes">&#10003;</td><td><span class="no" data-i18n="cmp.cell.filesonly">~ files only</span></td><td><span class="no" data-i18n="cmp.cell.weblimits">~ web limits</span></td><td><span class="no" data-i18n="cmp.cell.clunky">~ clunky</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td data-i18n="cmp.row.ondevice">Runs on-device &mdash; files never leave your Mac</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no" data-i18n="cmp.cell.cloud">&#10007; cloud</span></td><td><span class="no" data-i18n="cmp.cell.cloudfeatures">~ cloud features</span></td><td class="yes">&#10003;</td></tr>
+<tr><td data-i18n="cmp.row.onetime">One-time purchase (no subscription)</td><td class="us yes">$19.99</td><td class="yes">$7.99</td><td><span class="no" data-i18n="cmp.cell.subscription">subscription</span></td><td><span class="no" data-i18n="cmp.cell.subscription">subscription</span></td><td class="yes" data-i18n="cmp.cell.free">free</td></tr>
 </tbody></table></div></section>
 <section class="price" id="buy">
-  <div class="sec-label" style="text-align:center">// One price. Forever.</div>
+  <div class="sec-label" style="text-align:center" data-i18n="price.label">// One price. Forever.</div>
   <div class="big">SLIMR <span class="amt">$19.99</span></div>
-  <div class="terms">One-time purchase · 14-day trial · Works on every Mac you own</div>
-  <button class="btn primary" onclick="openCheckout()">Buy Slimr →</button>
+  <div class="terms" data-i18n="price.terms">One-time purchase · 14-day trial · Works on every Mac you own</div>
+  <button class="btn primary" onclick="openCheckout()" data-i18n="price.buy">Buy Slimr →</button>
 </section>
 
-<section class="faq"><div class="faq-wrap"><div class="sec-label">// Questions</div>
-<details class="faq-item"><summary>Does anything leave my Mac?</summary><p>No. All compression, PDF operations and OCR run entirely on your Mac. Your files, images and PDFs are never uploaded anywhere. The only network connections Slimr ever makes are an update check and a one-off licence validation — never your documents. You can confirm this yourself with a firewall tool like Little Snitch or LuLu.</p></details>
-<details class="faq-item"><summary>Does it work without an internet connection?</summary><p>Yes — completely. Once activated, Slimr does everything offline. Compression, merge/split/extract and OCR all use frameworks built into macOS, so you never need a connection to get work done.</p></details>
-<details class="faq-item"><summary>Is it on the Mac App Store / sandboxed?</summary><p>No. Slimr is sold directly and is distributed as a Developer ID app, notarized by Apple. That means it can work with whole folders and write results beside your files without the App Store sandbox getting in the way — while still being Gatekeeper-checked and safe to run.</p></details>
-<details class="faq-item"><summary>How many Macs can I use it on?</summary><p>All the Macs you personally own, with a single licence. One purchase covers your whole setup — no per-seat counting.</p></details>
-<details class="faq-item"><summary>What formats does it handle?</summary><p>Images: PNG, JPEG, HEIC and TIFF. Documents: PDF. You can compress any of these to a target size, run PDF merge/split/extract, and OCR images or PDFs into searchable PDFs.</p></details>
-<details class="faq-item"><summary>Will it reduce quality?</summary><p>You're in control. Slimr compresses toward the target size you choose and stops there, balancing quality against size. It never up-scales or enlarges a file — if something is already under the target, it's left as-is.</p></details>
-<details class="faq-item"><summary>Does the mirror folder touch my originals?</summary><p>Never. When you compress a folder, Slimr writes the results to a brand-new folder named "&lt;name&gt; — Slimr" right beside the source. Your originals are read but never modified, moved or deleted.</p></details>
-<details class="faq-item"><summary>What languages does the OCR support?</summary><p>OCR currently recognises Spanish and English text, using Apple's on-device Vision engine. The recognised text is added as an invisible, selectable layer so the page looks unchanged but becomes searchable.</p></details>
-<details class="faq-item"><summary>Can I get a refund?</summary><p>Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
+<section class="faq"><div class="faq-wrap"><div class="sec-label" data-i18n="faq.label">// Questions</div>
+<details class="faq-item"><summary data-i18n="faq.1.q">Does anything leave my Mac?</summary><p data-i18n="faq.1.a">No. All compression, PDF operations and OCR run entirely on your Mac. Your files, images and PDFs are never uploaded anywhere. The only network connections Slimr ever makes are an update check and a one-off licence validation — never your documents. You can confirm this yourself with a firewall tool like Little Snitch or LuLu.</p></details>
+<details class="faq-item"><summary data-i18n="faq.2.q">Does it work without an internet connection?</summary><p data-i18n="faq.2.a">Yes — completely. Once activated, Slimr does everything offline. Compression, merge/split/extract and OCR all use frameworks built into macOS, so you never need a connection to get work done.</p></details>
+<details class="faq-item"><summary data-i18n="faq.3.q">Is it on the Mac App Store / sandboxed?</summary><p data-i18n="faq.3.a">No. Slimr is sold directly and is distributed as a Developer ID app, notarized by Apple. That means it can work with whole folders and write results beside your files without the App Store sandbox getting in the way — while still being Gatekeeper-checked and safe to run.</p></details>
+<details class="faq-item"><summary data-i18n="faq.4.q">How many Macs can I use it on?</summary><p data-i18n="faq.4.a">All the Macs you personally own, with a single licence. One purchase covers your whole setup — no per-seat counting.</p></details>
+<details class="faq-item"><summary data-i18n="faq.5.q">What formats does it handle?</summary><p data-i18n="faq.5.a">Images: PNG, JPEG, HEIC and TIFF. Documents: PDF. You can compress any of these to a target size, run PDF merge/split/extract, and OCR images or PDFs into searchable PDFs.</p></details>
+<details class="faq-item"><summary data-i18n="faq.6.q">Will it reduce quality?</summary><p data-i18n="faq.6.a">You're in control. Slimr compresses toward the target size you choose and stops there, balancing quality against size. It never up-scales or enlarges a file — if something is already under the target, it's left as-is.</p></details>
+<details class="faq-item"><summary data-i18n="faq.7.q">Does the mirror folder touch my originals?</summary><p data-i18n="faq.7.a">Never. When you compress a folder, Slimr writes the results to a brand-new folder named "&lt;name&gt; — Slimr" right beside the source. Your originals are read but never modified, moved or deleted.</p></details>
+<details class="faq-item"><summary data-i18n="faq.8.q">What languages does the OCR support?</summary><p data-i18n="faq.8.a">OCR currently recognises Spanish and English text, using Apple's on-device Vision engine. The recognised text is added as an invisible, selectable layer so the page looks unchanged but becomes searchable.</p></details>
+<details class="faq-item"><summary data-i18n="faq.9.q">Can I get a refund?</summary><p data-i18n="faq.9.a">Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
 </div></section>
-<section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center">Clean metadata before you share</div></a><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center">Clean metadata before you share</div></a></div></div></section>
+<section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0" data-i18n="more.label">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.curtain">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.castly">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.curtain">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.castly">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a></div></div></section>
 <footer>
-  <div>© 2026 Perfect Paradox Ltd · NI739317</div>
-  <div><a href="/legal/privacy.html">Privacy</a> · <a href="/legal/terms.html">Terms</a> · <a href="/legal/refund.html">Refund</a> · <a href="/legal/eula.html">EULA</a> · <a href="mailto:info@perfectparadox.co.uk">info@perfectparadox.co.uk</a></div>
+  <div data-i18n="footer.copy">© 2026 Perfect Paradox Ltd · NI739317</div>
+  <div><a href="/legal/privacy.html" data-i18n="footer.privacy">Privacy</a> · <a href="/legal/terms.html" data-i18n="footer.terms">Terms</a> · <a href="/legal/refund.html" data-i18n="footer.refund">Refund</a> · <a href="/legal/eula.html" data-i18n="footer.eula">EULA</a> · <a href="mailto:info@perfectparadox.co.uk">info@perfectparadox.co.uk</a></div>
+  <div class="i18n-picker">
+    <label for="langSelect" class="i18n-globe" aria-hidden="true">&#127760;</label>
+    <select id="langSelect" aria-label="Language / Idioma"></select>
+  </div>
 </footer>
 </div>
+
+<!-- i18n: motor multiidioma client-side (NO toca Paddle ni precios). Patrón reutilizable validado en Castly. -->
+<script src="translations.js"></script>
+<script>
+(function () {
+  var I18N = window.I18N || {};
+  var LANGS = I18N.__langs || { en: "English" };
+  var SUPPORTED = Object.keys(LANGS);
+  var DEFAULT = "en";
+  var STORE_KEY = "slimr_lang";
+
+  function normalize(code) {
+    if (!code) return null;
+    code = code.trim();
+    if (SUPPORTED.indexOf(code) !== -1) return code;          // match exacto (incl. zh-Hans)
+    var lower = code.toLowerCase();
+    // chino → zh-Hans (simplificado) por defecto
+    if (lower.indexOf("zh") === 0) return SUPPORTED.indexOf("zh-Hans") !== -1 ? "zh-Hans" : null;
+    var base = lower.split("-")[0];                            // "es-419" → "es"
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      if (SUPPORTED[i].toLowerCase() === base || SUPPORTED[i].toLowerCase().split("-")[0] === base) {
+        return SUPPORTED[i];
+      }
+    }
+    return null;
+  }
+
+  function detect() {
+    try {
+      var qs = new URLSearchParams(window.location.search).get("lang");
+      var fromUrl = normalize(qs);
+      if (fromUrl) return fromUrl;
+    } catch (e) {}
+    try {
+      var saved = normalize(localStorage.getItem(STORE_KEY));
+      if (saved) return saved;
+    } catch (e) {}
+    var navs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < navs.length; i++) {
+      var n = normalize(navs[i]);
+      if (n) return n;
+    }
+    return DEFAULT;
+  }
+
+  function apply(lang) {
+    var dict = I18N[lang] || I18N[DEFAULT] || {};
+    var fallback = I18N[DEFAULT] || {};
+    function val(key) { return (dict[key] != null) ? dict[key] : fallback[key]; }
+
+    // 1) contenido de texto (permite HTML inline: <br>, <code>, <span>, →, etc.)
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) {
+      var k = nodes[i].getAttribute("data-i18n");
+      var v = val(k);
+      if (v != null) nodes[i].innerHTML = v;
+    }
+    // 2) atributos (content/placeholder/aria-...) → data-i18n-attr="attr:clave[,attr2:clave2]"
+    var attrNodes = document.querySelectorAll("[data-i18n-attr]");
+    for (var j = 0; j < attrNodes.length; j++) {
+      var spec = attrNodes[j].getAttribute("data-i18n-attr");
+      var pairs = spec.split(",");
+      for (var p = 0; p < pairs.length; p++) {
+        var parts = pairs[p].split(":");
+        if (parts.length === 2) {
+          var av = val(parts[1].trim());
+          if (av != null) attrNodes[j].setAttribute(parts[0].trim(), av.replace(/&amp;/g, "&"));
+        }
+      }
+    }
+    // 3) <html lang>
+    document.documentElement.setAttribute("lang", lang);
+  }
+
+  function persist(lang) {
+    try { localStorage.setItem(STORE_KEY, lang); } catch (e) {}
+  }
+
+  function syncUrl(lang) {
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url.toString());
+    } catch (e) {}
+  }
+
+  function buildSelector(current) {
+    var sel = document.getElementById("langSelect");
+    if (!sel) return;
+    sel.innerHTML = "";
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      var code = SUPPORTED[i];
+      var opt = document.createElement("option");
+      opt.value = code;
+      opt.textContent = LANGS[code];
+      if (code === current) opt.selected = true;
+      sel.appendChild(opt);
+    }
+    sel.addEventListener("change", function () {
+      var lang = sel.value;
+      apply(lang);
+      persist(lang);
+      syncUrl(lang);
+    });
+  }
+
+  function init() {
+    var lang = detect();
+    apply(lang);
+    persist(lang);
+    syncUrl(lang);
+    buildSelector(lang);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
 
 <!-- PADDLE: client token de cuenta ya puesto. PENDIENTE: sustituir PADDLE_PRICE_ID por el pri_... de Slimr ($19.99). -->
 <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
