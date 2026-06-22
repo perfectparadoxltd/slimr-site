@@ -25,6 +25,13 @@ window.I18N = {
 
   /* ===================================================================== */
   en: {
+    /* changelog / novedades */
+    "news.label": "// What's new",
+    "news.latest": "Latest",
+    "news.012.1": "Slimr now speaks your language — the whole interface is localized and follows your Mac automatically.",
+    "news.011.1": "Image compression now keeps transparency and fixes photo orientation, so PNGs and iPhone photos come out right.",
+    "news.011.2": "PDFs with real text stay selectable instead of being flattened, and bookmarks survive merge, split and extract.",
+    "news.010.1": "Initial release — compress images and PDFs to a target size, merge, split, extract and OCR, all on-device, with your originals never touched.",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8 languages",
     "marquee.5": "8 LANGUAGES",
@@ -153,6 +160,13 @@ window.I18N = {
 
   /* ===================================================================== */
   es: {
+    /* changelog / novedades */
+    "news.label": "// Novedades",
+    "news.latest": "Última",
+    "news.012.1": "Slimr ya habla tu idioma: toda la interfaz está traducida y sigue el idioma de tu Mac automáticamente.",
+    "news.011.1": "La compresión de imágenes ahora conserva la transparencia y corrige la orientación de las fotos, así los PNG y las fotos del iPhone salen bien.",
+    "news.011.2": "Los PDF con texto real siguen siendo seleccionables en vez de aplanarse, y los marcadores se conservan al combinar, dividir y extraer.",
+    "news.010.1": "Versión inicial: comprime imágenes y PDF a un tamaño objetivo, combina, divide, extrae y haz OCR, todo en tu dispositivo y sin tocar nunca tus originales.",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8 idiomas",
     "marquee.5": "8 IDIOMAS",
@@ -281,6 +295,13 @@ window.I18N = {
 
   /* ===================================================================== */
   fr: {
+    /* changelog / novedades */
+    "news.label": "// Nouveautés",
+    "news.latest": "Récent",
+    "news.012.1": "Slimr parle désormais votre langue : toute l'interface est traduite et suit automatiquement la langue de votre Mac.",
+    "news.011.1": "La compression d'images conserve maintenant la transparence et corrige l'orientation des photos, pour des PNG et des photos d'iPhone toujours nets.",
+    "news.011.2": "Les PDF contenant du vrai texte restent sélectionnables au lieu d'être aplatis, et les signets sont préservés lors des fusions, divisions et extractions.",
+    "news.010.1": "Version initiale : compressez images et PDF à une taille cible, fusionnez, divisez, extrayez et faites de l'OCR, le tout sur l'appareil, sans jamais toucher à vos originaux.",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8 langues",
     "marquee.5": "8 LANGUES",
@@ -409,6 +430,13 @@ window.I18N = {
 
   /* ===================================================================== */
   de: {
+    /* changelog / novedades */
+    "news.label": "// Neuigkeiten",
+    "news.latest": "Neu",
+    "news.012.1": "Slimr spricht jetzt deine Sprache — die gesamte Oberfläche ist übersetzt und folgt automatisch der Sprache deines Macs.",
+    "news.011.1": "Die Bildkomprimierung behält jetzt Transparenz bei und korrigiert die Fotoausrichtung, sodass PNGs und iPhone-Fotos richtig herauskommen.",
+    "news.011.2": "PDFs mit echtem Text bleiben auswählbar, statt verflacht zu werden, und Lesezeichen bleiben beim Zusammenführen, Teilen und Extrahieren erhalten.",
+    "news.010.1": "Erste Version — Bilder und PDFs auf eine Zielgröße komprimieren, zusammenführen, teilen, extrahieren und OCR, alles auf dem Gerät, ohne deine Originale je anzurühren.",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8 Sprachen",
     "marquee.5": "8 SPRACHEN",
@@ -537,6 +565,13 @@ window.I18N = {
 
   /* ===================================================================== */
   it: {
+    /* changelog / novedades */
+    "news.label": "// Novità",
+    "news.latest": "Ultima",
+    "news.012.1": "Slimr ora parla la tua lingua: tutta l'interfaccia è tradotta e segue automaticamente la lingua del tuo Mac.",
+    "news.011.1": "La compressione delle immagini ora mantiene la trasparenza e corregge l'orientamento delle foto, così PNG e foto dell'iPhone vengono giusti.",
+    "news.011.2": "I PDF con testo reale restano selezionabili invece di essere appiattiti, e i segnalibri si conservano in unione, divisione ed estrazione.",
+    "news.010.1": "Versione iniziale: comprimi immagini e PDF a una dimensione obiettivo, unisci, dividi, estrai e fai OCR, tutto sul dispositivo e senza toccare mai i tuoi originali.",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8 lingue",
     "marquee.5": "8 LINGUE",
@@ -665,6 +700,13 @@ window.I18N = {
 
   /* ===================================================================== */
   pt: {
+    /* changelog / novedades */
+    "news.label": "// Novidades",
+    "news.latest": "Recente",
+    "news.012.1": "O Slimr já fala o teu idioma: toda a interface está traduzida e segue automaticamente o idioma do teu Mac.",
+    "news.011.1": "A compressão de imagens agora mantém a transparência e corrige a orientação das fotos, por isso os PNG e as fotos do iPhone saem corretos.",
+    "news.011.2": "Os PDF com texto real continuam selecionáveis em vez de serem achatados, e os marcadores são preservados ao juntar, dividir e extrair.",
+    "news.010.1": "Versão inicial: comprime imagens e PDF para um tamanho-alvo, junta, divide, extrai e faz OCR, tudo no dispositivo e sem nunca tocar nos teus originais.",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8 idiomas",
     "marquee.5": "8 IDIOMAS",
@@ -793,6 +835,13 @@ window.I18N = {
 
   /* ===================================================================== */
   ja: {
+    /* changelog / novedades */
+    "news.label": "// 新着情報",
+    "news.latest": "最新",
+    "news.012.1": "Slimr があなたの言語に対応しました。インターフェース全体がローカライズされ、Mac の言語に自動で合わせます。",
+    "news.011.1": "画像圧縮が透過を保持し、写真の向きを補正するようになりました。PNG や iPhone の写真が正しく出力されます。",
+    "news.011.2": "テキストを含む PDF はフラット化されず選択可能なまま保たれ、結合・分割・抽出してもしおりが残ります。",
+    "news.010.1": "初回リリース — 画像と PDF を目標サイズに圧縮し、結合・分割・抽出・OCR まで、すべて端末内で実行。元のファイルには一切手を加えません。",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8言語",
     "marquee.5": "8言語対応",
@@ -921,6 +970,13 @@ window.I18N = {
 
   /* ===================================================================== */
   "zh-Hans": {
+    /* changelog / novedades */
+    "news.label": "// 新功能",
+    "news.latest": "最新",
+    "news.012.1": "Slimr 现已支持你的语言——整个界面均已本地化，并自动跟随 Mac 的语言。",
+    "news.011.1": "图像压缩现在会保留透明度并修正照片方向，PNG 和 iPhone 照片都能正确输出。",
+    "news.011.2": "含真实文字的 PDF 不再被压平，仍可选中，合并、拆分和提取时书签也会保留。",
+    "news.010.1": "首个版本——将图像和 PDF 压缩到目标大小，合并、拆分、提取并进行 OCR，全部在本机完成，绝不改动你的原始文件。",
     /* idiomas + feedback (multiidioma + formulario) */
     "hero.langs": "8 种语言",
     "marquee.5": "8 种语言",
