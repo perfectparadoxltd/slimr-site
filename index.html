@@ -142,6 +142,36 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 .i18n-picker select{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:6px;padding:7px 28px 7px 10px;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238c8a86' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;transition:.18s}
 .i18n-picker select:hover{color:var(--ink);border-color:var(--indigo2)}
 .i18n-picker select option{background:#0d0d0e;color:var(--ink);text-transform:none}
+/* multiidioma */
+.langbadge{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--indigo2);border:1px solid var(--indigo2);border-radius:999px;padding:8px 15px;display:inline-flex;align-items:center;gap:8px;line-height:1}
+.langs{padding:78px 56px;text-align:center;background:rgba(10,10,11,.86);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.langs .sec-label{margin-bottom:24px}
+.langs-row{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(20px,3.3vw,34px);line-height:1.15;letter-spacing:.01em;color:var(--ink)}
+.langs-row .sep{color:var(--indigo2);margin:0 8px;font-weight:400}
+.langs p{font-family:'Archivo',sans-serif;text-transform:none;color:#cbc7bf;font-size:15px;line-height:1.55;max-width:580px;margin:20px auto 0;letter-spacing:0}
+/* feedback */
+.fb{padding:120px 56px;background:rgba(10,10,11,.92)}
+.fb-wrap{max-width:680px;margin:0 auto}
+.fb-lead{color:#cbc7bf;font-size:17px;line-height:1.6;margin:0 0 34px;max-width:560px}
+.fb-form{display:flex;flex-direction:column;gap:18px}
+.fb-types{display:flex;gap:10px;flex-wrap:wrap}
+.fb-chip{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:10px 18px;cursor:pointer;transition:.16s}
+.fb-chip:hover{color:var(--ink);border-color:var(--indigo2)}
+.fb-chip.on{color:var(--bg);background:var(--indigo2);border-color:var(--indigo2)}
+.fb-field{display:flex;flex-direction:column;gap:8px}
+.fb-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.fb-input,.fb-text{font-family:'Archivo',sans-serif;font-size:15px;color:var(--ink);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:14px 16px;width:100%;transition:.16s}
+.fb-text{min-height:140px;resize:vertical;line-height:1.55}
+.fb-input:focus,.fb-text:focus{outline:none;border-color:var(--indigo2);background:rgba(255,255,255,.05)}
+.fb-input::placeholder,.fb-text::placeholder{color:#6e6c69}
+.fb-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+.fb-row{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin-top:4px}
+.fb-note{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.05em;color:var(--muted);max-width:300px;line-height:1.5}
+.fb-msg{font-size:14.5px;line-height:1.5;padding:10px 0;display:none}
+.fb-msg.ok{color:var(--indigo2);display:block}
+.fb-msg.err{color:#ED6A5E;display:block}
+.fb .btn[disabled]{opacity:.55;cursor:wait}
+@media(max-width:760px){.fb,.langs{padding-left:24px;padding-right:24px}}
 </style>
 <script defer data-domain="slimr.perfectparadox.co.uk" src="https://analytics.dchv.co.uk/js/script.js"></script>
 </head>
@@ -171,11 +201,12 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
       <a href="https://slimr.perfectparadox.co.uk/Slimr-0.1.0.zip" class="btn primary" data-i18n="hero.download">Download trial →</a>
       <button class="btn" onclick="openCheckout()" data-i18n="hero.buy">Buy · $19.99</button>
       <span class="price-tag" data-i18n="hero.terms">ONE-TIME · 14-DAY TRIAL</span>
+      <span class="langbadge">&#127760; <span data-i18n="hero.langs">8 languages</span></span>
     </div>
   </div>
 </section>
 
-<div class="marquee"><div>COMPRESS TO A TARGET SIZE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;ON-DEVICE OCR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;MERGE · SPLIT · EXTRACT&nbsp;&nbsp;·&nbsp;&nbsp;<b>NEVER TOUCHES YOUR ORIGINALS</b>&nbsp;&nbsp;·&nbsp;&nbsp;COMPRESS TO A TARGET SIZE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;ON-DEVICE OCR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;MERGE · SPLIT · EXTRACT&nbsp;&nbsp;·&nbsp;&nbsp;<b>NEVER TOUCHES YOUR ORIGINALS</b>&nbsp;&nbsp;·&nbsp;&nbsp;</div></div>
+<div class="marquee"><div>COMPRESS TO A TARGET SIZE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;ON-DEVICE OCR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;MERGE · SPLIT · EXTRACT&nbsp;&nbsp;·&nbsp;&nbsp;<b>NEVER TOUCHES YOUR ORIGINALS</b>&nbsp;&nbsp;·&nbsp;&nbsp;<span data-i18n="marquee.5">8 LANGUAGES</span>&nbsp;&nbsp;·&nbsp;&nbsp;COMPRESS TO A TARGET SIZE&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;ON-DEVICE OCR&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;MERGE · SPLIT · EXTRACT&nbsp;&nbsp;·&nbsp;&nbsp;<b>NEVER TOUCHES YOUR ORIGINALS</b>&nbsp;&nbsp;·&nbsp;&nbsp;<span data-i18n="marquee.5">8 LANGUAGES</span>&nbsp;&nbsp;·&nbsp;&nbsp;</div></div>
 
 
 <section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label" data-i18n="how.label">// How it works</div></div><div class="how-wrap">
@@ -231,6 +262,11 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 <tr><td data-i18n="cmp.row.ondevice">Runs on-device &mdash; files never leave your Mac</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no" data-i18n="cmp.cell.cloud">&#10007; cloud</span></td><td><span class="no" data-i18n="cmp.cell.cloudfeatures">~ cloud features</span></td><td class="yes">&#10003;</td></tr>
 <tr><td data-i18n="cmp.row.onetime">One-time purchase (no subscription)</td><td class="us yes">$19.99</td><td class="yes">$7.99</td><td><span class="no" data-i18n="cmp.cell.subscription">subscription</span></td><td><span class="no" data-i18n="cmp.cell.subscription">subscription</span></td><td class="yes" data-i18n="cmp.cell.free">free</td></tr>
 </tbody></table></div></section>
+<section class="langs" id="languages">
+  <div class="sec-label" data-i18n="langs.label">// Speaks your language</div>
+  <div class="langs-row">English<span class="sep">·</span>Español<span class="sep">·</span>Français<span class="sep">·</span>Deutsch<span class="sep">·</span>Italiano<span class="sep">·</span>Português<span class="sep">·</span>日本語<span class="sep">·</span>简体中文</div>
+  <p data-i18n="langs.body">Slimr's whole interface is localized into 8 languages — it follows your Mac and speaks your language out of the box. No setup, nothing to switch on.</p>
+</section>
 <section class="price" id="buy">
   <div class="sec-label" style="text-align:center" data-i18n="price.label">// One price. Forever.</div>
   <div class="big">SLIMR <span class="amt">$19.99</span></div>
@@ -249,6 +285,33 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 <details class="faq-item"><summary data-i18n="faq.8.q">What languages does the OCR support?</summary><p data-i18n="faq.8.a">OCR currently recognises Spanish and English text, using Apple's on-device Vision engine. The recognised text is added as an invisible, selectable layer so the page looks unchanged but becomes searchable.</p></details>
 <details class="faq-item"><summary data-i18n="faq.9.q">Can I get a refund?</summary><p data-i18n="faq.9.a">Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
 </div></section>
+<section class="fb" id="feedback"><div class="fb-wrap"><div class="sec-label" data-i18n="fb.label">// Feedback</div>
+  <h2 style="font-family:'Anton',sans-serif;text-transform:uppercase;font-size:clamp(34px,6vw,58px);line-height:.9;margin:0 0 18px" data-i18n="fb.title">Help shape<br>Slimr</h2>
+  <p class="fb-lead" data-i18n="fb.lead">Found a bug, or wish it did one more thing? Tell us — every message goes straight to the people who build Slimr. No account, no tracking.</p>
+  <form class="fb-form" id="fbForm" novalidate>
+    <div class="fb-types" id="fbTypes" role="group" aria-label="Feedback type">
+      <button type="button" class="fb-chip on" data-val="idea" data-i18n="fb.type.idea">Idea</button>
+      <button type="button" class="fb-chip" data-val="bug" data-i18n="fb.type.bug">Bug</button>
+      <button type="button" class="fb-chip" data-val="praise" data-i18n="fb.type.praise">Praise</button>
+      <button type="button" class="fb-chip" data-val="other" data-i18n="fb.type.other">Other</button>
+    </div>
+    <div class="fb-field">
+      <label class="fb-label" for="fbMsg" data-i18n="fb.msg.label">Your message</label>
+      <textarea class="fb-text" id="fbMsg" name="message" required placeholder="What's on your mind?" data-i18n-attr="placeholder:fb.msg.ph"></textarea>
+    </div>
+    <div class="fb-field">
+      <label class="fb-label" for="fbEmail" data-i18n="fb.email.label">Email (optional — so we can reply)</label>
+      <input class="fb-input" id="fbEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" data-i18n-attr="placeholder:fb.email.ph">
+    </div>
+    <input class="fb-hp" type="text" id="fbHp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fb-row">
+      <button type="submit" class="btn primary" id="fbSend" data-i18n="fb.send">Send feedback →</button>
+      <span class="fb-note" data-i18n="fb.note">We read everything. Honest feedback shapes the next update.</span>
+    </div>
+    <div class="fb-msg" id="fbResult" role="status" aria-live="polite"></div>
+  </form>
+</div></section>
+
 <section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0" data-i18n="more.label">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.curtain">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.castly">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.curtain">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://castly.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/castly.png" alt="Castly" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Castly</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.castly">Transform text as you paste</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a></div></div></section>
 <footer>
   <div data-i18n="footer.copy">© 2026 Perfect Paradox Ltd · NI739317</div>
@@ -398,6 +461,61 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
     }
   }
 </script>
-<script>(function(){var b=document.getElementById('stickybuy');addEventListener('scroll',function(){if(scrollY>700)b.classList.add('show');else b.classList.remove('show')})})();</script>
+<script>(function(){
+  var b=document.getElementById('stickybuy');
+  var footer=document.querySelector('footer');
+  var footerNear=false;
+  // Oculta la barra fija cuando el footer (enlaces legales) entra en pantalla,
+  // para que no se solape con Privacy/Terms/Refund/EULA al llegar al fondo.
+  if(footer&&'IntersectionObserver'in window){
+    new IntersectionObserver(function(es){footerNear=es[0].isIntersecting;update();},{rootMargin:'80px'}).observe(footer);
+  }
+  function update(){if(window.scrollY>700&&!footerNear)b.classList.add('show');else b.classList.remove('show');}
+  addEventListener('scroll',update);update();
+})();</script>
+<!-- feedback: form → Cloudflare Worker (/feedback) → Resend → feedback@perfectparadox.co.uk -->
+<script>
+(function(){
+  var FEEDBACK_URL = 'https://pp-license-fulfillment.diegochavesta.workers.dev/feedback';
+  var APP = 'slimr';
+  var form = document.getElementById('fbForm');
+  if (!form) return;
+  var types = document.getElementById('fbTypes');
+  var chosen = 'idea';
+  types.addEventListener('click', function(e){
+    var chip = e.target.closest('.fb-chip'); if (!chip) return;
+    chosen = chip.getAttribute('data-val');
+    var all = types.querySelectorAll('.fb-chip');
+    for (var i=0;i<all.length;i++) all[i].classList.toggle('on', all[i]===chip);
+  });
+  var msgEl = document.getElementById('fbMsg');
+  var emailEl = document.getElementById('fbEmail');
+  var hpEl = document.getElementById('fbHp');
+  var btn = document.getElementById('fbSend');
+  var out = document.getElementById('fbResult');
+  function dict(){ try { var L=document.documentElement.getAttribute('lang')||'en'; return (window.I18N&&window.I18N[L])||{}; } catch(e){ return {}; } }
+  function t(k,fb){ var d=dict(); return d[k]!=null?d[k]:fb; }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var message = (msgEl.value||'').trim();
+    out.className = 'fb-msg';
+    if (message.length < 3){ out.className='fb-msg err'; out.textContent = t('fb.result.empty','Please write a short message first.'); msgEl.focus(); return; }
+    btn.disabled = true; var label = btn.innerHTML; btn.innerHTML = t('fb.sending','Sending…');
+    fetch(FEEDBACK_URL, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ app:APP, type:chosen, message:message, email:(emailEl.value||'').trim(), hp:(hpEl.value||'') })
+    }).then(function(r){ return r.ok ? r.json() : Promise.reject(r); })
+    .then(function(d){
+      if (d && d.ok){ out.className='fb-msg ok'; out.textContent = t('fb.result.ok','Thank you — your feedback is on its way to the team.'); form.reset(); chosen='idea'; var all=types.querySelectorAll('.fb-chip'); for(var i=0;i<all.length;i++) all[i].classList.toggle('on', all[i].getAttribute('data-val')==='idea'); }
+      else throw new Error('bad');
+    })
+    .catch(function(){
+      out.className='fb-msg err';
+      out.innerHTML = t('fb.result.err','Could not send right now. You can email us at ') + '<a href="mailto:feedback@perfectparadox.co.uk?subject=slimr%20feedback" style="color:var(--indigo2)">feedback@perfectparadox.co.uk</a>.';
+    })
+    .finally(function(){ btn.disabled=false; btn.innerHTML=label; });
+  });
+})();
+</script>
 </body>
 </html>
