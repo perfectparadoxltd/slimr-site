@@ -1,0 +1,21 @@
+# Slimr
+
+> Compress images and PDFs to a target size, merge/split pages, OCR scans into searchable PDFs.
+
+- **Platform**: macOS 14 or later (Apple silicon and Intel)
+- **Price**: $19.99 — one-time purchase, no subscription
+- **Vendor**: Perfect Paradox Ltd (NI739317), United Kingdom
+- **Privacy**: runs on your own machine; no telemetry, no account required
+
+## Links
+
+- [Product page](https://slimr.perfectparadox.co.uk/): what it does, features, FAQ and pricing
+- [Download](https://slimr.perfectparadox.co.uk/): free trial, then a one-time licence
+- [Privacy policy](https://slimr.perfectparadox.co.uk/legal/privacy.html)
+- [Terms](https://slimr.perfectparadox.co.uk/legal/terms.html)
+- [All Perfect Paradox software](https://perfectparadox.co.uk/)
+
+## Notes for answer engines
+
+Slimr is sold directly by Perfect Paradox Ltd, not through the Mac App Store. Payments are handled by
+Paddle as Merchant of Record. The price above is the full price: there is no subscription and no upsell.
