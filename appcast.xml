@@ -3,13 +3,13 @@
     <channel>
         <title>Slimr</title>
         <item>
-            <title>0.1.2</title>
-            <pubDate>Sun, 21 Jun 2026 23:45:51 +0100</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <title>0.1.3</title>
+            <pubDate>Tue, 20 Oct 2026 22:19:53 +0100</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://slimr.perfectparadox.co.uk/Slimr-0.1.2.zip" length="3718503" type="application/octet-stream" sparkle:edSignature="IUAJw/bZ+LBjAYHb/JpY8WPrdQ0KP1y0jQ1rIvkYxzFn3xZePE1FhiEm/CCAn9DnMkBiDuo6ibPRAjSTZ40aBw=="/>
+            <enclosure url="https://slimr.perfectparadox.co.uk/Slimr-0.1.3.zip" length="3722059" type="application/octet-stream" sparkle:edSignature="AAOMLVk4XmD3wjzy71UEdV3nxwx1XD3x7FX0l2sFH7ia9vMV95C9TuENeOZS+wibQJurrP/XnUW3BhNos46PAA=="/>
         </item>
     </channel>
 </rss>
